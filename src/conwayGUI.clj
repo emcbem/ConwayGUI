@@ -41,7 +41,7 @@
 (defn draw [old-state]
   (println old-state)
   (q/background (q/random 255) 45 200) 
-  (doseq [i old-state] (q/rect (i first) (i second) 10 10))
+  (doseq [i old-state] (q/rect (* 10 (first i)) (* 10 (second i)) 10 10))
   )
   
 
